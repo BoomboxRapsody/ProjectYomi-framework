@@ -3,6 +3,7 @@
 
 using System.ComponentModel;
 using System.Diagnostics.CodeAnalysis;
+using osu.Framework.Localisation;
 
 namespace osu.Framework.Configuration
 {
@@ -10,18 +11,20 @@ namespace osu.Framework.Configuration
     [SuppressMessage("ReSharper", "InconsistentNaming")]
     public enum FrameSync
     {
+        [LocalisableDescription(typeof(ProjectYomiVariables), nameof(ProjectYomiVariables.VSync))]
         VSync,
 
-        [Description("2x refresh rate")]
+        //[Description("2x refresh rate")]
+        [LocalisableDescription(typeof(ProjectYomiVariables), nameof(ProjectYomiVariables.Limit2X))]
         Limit2x,
 
-        [Description("4x refresh rate")]
+        [LocalisableDescription(typeof(ProjectYomiVariables), nameof(ProjectYomiVariables.Limit4X))]
         Limit4x,
 
-        [Description("8x refresh rate")]
+        [LocalisableDescription(typeof(ProjectYomiVariables), nameof(ProjectYomiVariables.Limit8X))]
         Limit8x,
 
-        [Description("Basically unlimited")]
+        [LocalisableDescription(typeof(ProjectYomiVariables), nameof(ProjectYomiVariables.LimitUnlimited))]
         Unlimited,
     }
 }

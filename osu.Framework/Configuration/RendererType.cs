@@ -5,6 +5,7 @@ using System;
 using System.ComponentModel;
 using System.Diagnostics.CodeAnalysis;
 using osu.Framework.Graphics.OpenGL;
+using osu.Framework.Localisation;
 
 namespace osu.Framework.Configuration
 {
@@ -12,7 +13,7 @@ namespace osu.Framework.Configuration
     [SuppressMessage("ReSharper", "InconsistentNaming")]
     public enum RendererType
     {
-        [Description("Automatic")]
+        [LocalisableDescription(typeof(ProjectYomiVariables), nameof(ProjectYomiVariables.osuframework_renderer_automatic))]
         Automatic,
 
         [Description("Metal")]
@@ -21,7 +22,7 @@ namespace osu.Framework.Configuration
         [Description("Vulkan")]
         Vulkan,
 
-        [Description("Direct3D 11")]
+        [Description("DirectX 11")]
         Direct3D11,
 
         /// <summary>
@@ -41,7 +42,7 @@ namespace osu.Framework.Configuration
         [Description("Vulkan (Experimental)")]
         Deferred_Vulkan,
 
-        [Description("Direct3D 11 (Experimental)")]
+        [Description("DirectX 11 (Experimental)")]
         Deferred_Direct3D11,
 
         [Description("OpenGL (Experimental)")]
