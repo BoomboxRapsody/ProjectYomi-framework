@@ -18,6 +18,7 @@
     <PackageReleaseNotes>Automated release.</PackageReleaseNotes>
     <PackageTags>osu game framework</PackageTags>
   </PropertyGroup>
+  
   <ItemGroup Label="Package References">
     <PackageReference Include="managed-midi" Version="1.10.1" />
     <PackageReference Include="FFmpeg.AutoGen" Version="4.3.0.1" />
