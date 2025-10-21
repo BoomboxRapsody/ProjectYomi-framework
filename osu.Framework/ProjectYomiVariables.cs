@@ -7,7 +7,7 @@ namespace osu.Framework
 {
     public static class ProjectYomiVariables
     {
-        private const string prefix = @"osu.Framework.Resources.Localisation.ProjectYomi";
+        private const string prefix = @"osu.Framework.Resources.Localisation.ProjectYomiFramework";
 
         public static LocalisableString Limit2X => new TranslatableString(getKey(@"osuframework_limit2x"), @"2X Refresh Rate");
         public static LocalisableString Limit4X => new TranslatableString(getKey(@"osuframework_limit4x"), @"4X Refresh Rate");
